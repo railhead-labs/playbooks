@@ -6,7 +6,7 @@
 
 ## Who this is for
 
-Health systems, physician groups and post-acute providers that report quality measures to several programs at once: government quality programs, health plan measures such as HEDIS, value-based contracts, registries and accreditation bodies. <!-- VERIFY: which quality reporting programs apply to your organization and their current requirements. --> The pain sits with quality analysts, chart abstractors and informatics staff. This playbook fits if every reporting period is a scramble, if your numbers never match the payer's, or if care gap lists reach clinics too late in the year to act on.
+Health systems, physician groups and post-acute providers that report quality measures to several programs at once: government quality programs, health plan measures such as HEDIS, value-based contracts, registries and accreditation bodies. The pain sits with quality analysts, chart abstractors and informatics staff. This playbook fits if every reporting period is a scramble, if your numbers never match the payer's, or if care gap lists reach clinics too late in the year to act on.
 
 ## How it runs today
 
@@ -75,13 +75,13 @@ Track how often abstractors confirm the system's candidates, by measure. Use tha
 ## Controls and risks
 
 - **Accuracy targets.** Test measure logic against a set of patient test cases with known answers. For document evidence, agree targets for precision (share of candidates confirmed) and recall. To measure recall, abstractors review a random sample of charts where the system found nothing.
-- **Reporting integrity.** The system never edits documentation or creates evidence. Gaps close only when care is delivered and documented. Report results as computed. Some programs require an attestation that submitted data is accurate. <!-- VERIFY: attestation and data accuracy requirements for each program you submit to. -->
-- **Specification versions.** Record the specification version for each measure and program. Specifications are updated periodically, often yearly, and a run must use the version for its period. <!-- VERIFY: specification update cycles and version rules for each program. -->
+- **Reporting integrity.** The system never edits documentation or creates evidence. Gaps close only when care is delivered and documented. Report results as computed. Some programs require an attestation that submitted data is accurate.
+- **Specification versions.** Record the specification version for each measure and program. Specifications are updated periodically, often yearly, and a run must use the version for its period.
 - **Audit trail and reproducibility.** Store the logic version, data snapshot, evidence confirmations and approver for every report. You should be able to rerun a past report and get the same numbers.
 - **Fallback.** Keep the current method documented and runnable. Run old and new side by side for one full reporting period before retiring the old one.
-- **Minimum necessary access.** The system reads only the data elements and documents the measures need, with its own scoped, read-only service identity. Share aggregate rates widely; restrict patient-level lists by role. <!-- VERIFY: how the HIPAA minimum necessary standard applies to quality reporting and health care operations in this workflow, and the basis for disclosing patient-level data to payers and registries. -->
-- **Business associate agreements.** Every vendor that stores, processes or transmits PHI here needs a signed BAA first: model providers, cloud and data platforms, and reporting vendors. Confirm which products each BAA covers. <!-- VERIFY: BAA requirement for vendors that create, receive, maintain or transmit PHI on your behalf, and the product scope of each vendor's BAA. -->
-- **No PHI to services that aren't covered.** Route model calls through one gateway with an allow list of covered endpoints. Turn off response caching for PHI traffic, and turn off prompt logging or keep it in covered storage. Log record IDs, not PHI. Test with de-identified or synthetic data. <!-- VERIFY: the de-identification method used for test data meets HIPAA de-identification standards. -->
+- **Minimum necessary access.** The system reads only the data elements and documents the measures need, with its own scoped, read-only service identity. Share aggregate rates widely; restrict patient-level lists by role.
+- **Business associate agreements.** Every vendor that stores, processes or transmits PHI here needs a signed BAA first: model providers, cloud and data platforms, and reporting vendors. Confirm which products each BAA covers.
+- **No PHI to services that aren't covered.** Route model calls through one gateway with an allow list of covered endpoints. Turn off response caching for PHI traffic, and turn off prompt logging or keep it in covered storage. Log record IDs, not PHI. Test with de-identified or synthetic data.
 - **Change control.** Measure logic, prompts, models and evidence rules are versioned. Each change runs against the test cases and is signed off by the process owner.
 
 *This playbook is general information, not legal or compliance advice. Confirm requirements with your counsel and compliance team.*

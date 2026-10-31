@@ -60,7 +60,7 @@ Set thresholds from your own audit sample, not a vendor default. Start conservat
 - **Every refund over the threshold.** A named approver signs off with the evidence in front of them.
 - **Every fraud or abuse decision.** A signal is not proof. A person decides whether to deny, limit or investigate. A wrong accusation loses a customer and can create legal exposure.
 - **Every denial.** Customers hear "no" from a person, not from the system.
-- **Safety reports.** Injury and hazard reports go to your product safety lead. They may carry reporting duties to product safety regulators. <!-- VERIFY: confirm with counsel whether and when retailers must report product hazards to regulators (for example the U.S. Consumer Product Safety Commission) in your markets and categories. -->
+- **Safety reports.** Injury and hazard reports go to your product safety lead. They may carry reporting duties to product safety regulators.
 - **Policy exceptions for loyal or high-value customers.** These are relationship calls.
 - **Grades that decide money.** Final grade in categories that haven't met the accuracy target, and on items that support a vendor claim.
 - **Vendor claims.** The buyer owns the vendor relationship.
@@ -69,11 +69,11 @@ Set thresholds from your own audit sample, not a vendor default. Start conservat
 ## Controls and risks
 
 - **Accuracy targets.** Before go-live, agree targets with the returns owner for reason codes, recommended outcomes and grades. Measure weekly on a random sample a person re-reviews without seeing the AI's answer. Set the bar at or above what your team achieves on the same sample today.
-- **Fraud signal quality.** Review false flags monthly. Check that flags don't cluster by neighborhood or other stand-ins for protected traits. <!-- VERIFY: confirm with counsel which customer data and attributes may be used in return fraud scoring and customer restrictions in each market you sell in. -->
+- **Fraud signal quality.** Review false flags monthly. Check that flags don't cluster by neighborhood or other stand-ins for protected traits.
 - **Audit trail.** Each return keeps the request, photos, model and prompt versions, scores, recommendation, approver and time, stored with the order record.
 - **Failure modes and fallback.** Expect model outages, blurry photos and new products with no catalog images. When the AI service errors or confidence drops, cases route to the existing manual queue. The old path stays open.
-- **Customer messages.** Automated decisions use the same approved templates as today. Return policy disclosure and refund timing rules vary by state and country, so keep templates aligned with your posted policy. <!-- VERIFY: confirm consumer protection requirements for return policy disclosure and refund timing in your markets. -->
-- **Data handling.** Photos can show faces, homes and shipping labels. Store them in a private bucket with retention set by your policy. Card numbers never enter prompts or logs. Refunds go through your payment processor by original transaction reference. <!-- VERIFY: confirm with your PCI DSS assessor that issuing refunds by transaction reference keeps the returns system out of cardholder data scope. -->
+- **Customer messages.** Automated decisions use the same approved templates as today. Return policy disclosure and refund timing rules vary by state and country, so keep templates aligned with your posted policy.
+- **Data handling.** Photos can show faces, homes and shipping labels. Store them in a private bucket with retention set by your policy. Card numbers never enter prompts or logs. Refunds go through your payment processor by original transaction reference.
 - **Access.** The reviewer console sits behind single sign-on with role-based views. Only named approvers can release refunds over the threshold.
 - **Model and prompt change control.** Versions are pinned. Every change runs against a saved test set of past returns with known outcomes, and the process owner signs off before release.
 

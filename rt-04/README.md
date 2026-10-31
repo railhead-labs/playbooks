@@ -62,7 +62,7 @@ Hard cases always go to a person:
 
 Two checks run on every turn. The first asks whether the assistant is allowed to handle this. That is a rule, not a guess. The second asks whether the answer is grounded. The assistant answers only from order data, tracking and approved help content. If it can't find a source, it says so and hands off. It never invents a delivery date, a policy or a promise.
 
-The way to a person is always open. Every chat shows a "talk to a person" option on every turn. Every automated email tells the customer how to reach a person. Outside staffed hours, the assistant says when a person will reply and opens the ticket with the summary attached. Customers are told they are talking with an automated assistant. <!-- VERIFY: some US states, including California, have laws requiring bots to disclose that they are not human in certain situations. Confirm disclosure requirements for your channels and markets. -->
+The way to a person is always open. Every chat shows a "talk to a person" option on every turn. Every automated email tells the customer how to reach a person. Outside staffed hours, the assistant says when a person will reply and opens the ticket with the summary attached. Customers are told they are talking with an automated assistant.
 
 ## What stays with people
 
@@ -82,7 +82,7 @@ The way to a person is always open. Every chat shows a "talk to a person" option
 - **Audit trail.** Store each conversation with the data the assistant looked up, actions it took, model and prompt versions and the handoff summary, attached to the ticket.
 - **Untrusted input.** Customers can type anything, including attempts to manipulate the assistant. Tools are read-only by default. The assistant sees only the verified customer's orders. The model can request an action, but rules outside the model decide whether it runs.
 - **Failure modes and fallback.** Expect wrong answers, outages, stale carrier data and surges. On any failure, contacts route to the existing agent queue with an honest message. The old path stays open.
-- **Data handling.** Redact card numbers and other sensitive data before storage and before any model call. Keep transcripts only as long as your retention policy allows. Rules on customer data, including access and deletion requests, vary by state and country. <!-- VERIFY: confirm which privacy laws apply to customer service transcripts in your markets, including retention, access and deletion obligations. -->
+- **Data handling.** Redact card numbers and other sensitive data before storage and before any model call. Keep transcripts only as long as your retention policy allows. Rules on customer data, including access and deletion requests, vary by state and country.
 - **Access.** The assistant runs under its own identity, scoped to the tools it needs. Agents and supervisors sign in through single sign-on.
 - **Model and prompt change control.** Help content, policies, prompts and models are versioned. Changes are tested before release against a saved set of past conversations, including hard cases that must hand off.
 

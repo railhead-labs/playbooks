@@ -81,7 +81,7 @@ The language model does not produce forecast numbers. It reads the promotion cal
 - **Backtesting.** Every model change is tested on past periods held out from training, including past promotions and weather events, before release.
 - **Audit trail.** Store each forecast version with its inputs (promotion record, weather data, model version), every adjustment and override with who made it, and the orders it produced.
 - **Failure modes and fallback.** Expect late or wrong calendars, weather data outages, new stores with no history, and stockouts that hide true demand. If an input is missing, the system uses the last approved forecast and flags it. The old process runs in parallel until the new forecast beats it over several cycles, and planners can revert at any time.
-- **Data handling and access.** Sales history and promotion plans are commercially sensitive. Access is by role. Confirm your weather data license covers commercial use and storing history. <!-- VERIFY: confirm with your weather data provider and counsel that the license permits this use, including storing and reusing historical data. -->
+- **Data handling and access.** Sales history and promotion plans are commercially sensitive. Access is by role. Confirm your weather data license covers commercial use and storing history.
 - **Model and prompt change control.** Forecast models, features, thresholds and extraction prompts are versioned. Changes need a passing backtest and the planning owner's sign-off.
 
 ## How to build it

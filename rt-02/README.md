@@ -56,8 +56,8 @@ The approved claims register makes this work. Each entry holds the exact wording
 
 ## What stays with people
 
-- **Approval of every regulated or safety claim before publishing.** This covers product safety, health and wellness, environmental claims ("eco", "biodegradable", "recyclable", "carbon neutral"), "natural" and "organic", country of origin, certifications and test results. A person checks the substantiation because these claims carry legal exposure. <!-- VERIFY: in the US, environmental marketing claims are addressed by the FTC's Green Guides; health claims may fall under FTC and FDA rules depending on product type; "Made in USA" claims are subject to FTC standards; California Proposition 65 warnings may apply to some products. Confirm which rules apply to your categories and markets. -->
-- **Required warnings and age grading.** Warning text, such as choking hazard warnings on toys, comes from an approved source and is never written or paraphrased by the AI. <!-- VERIFY: confirm required warning and labeling rules for children's products and other regulated categories you sell, including online listing requirements. -->
+- **Approval of every regulated or safety claim before publishing.** This covers product safety, health and wellness, environmental claims ("eco", "biodegradable", "recyclable", "carbon neutral"), "natural" and "organic", country of origin, certifications and test results. A person checks the substantiation because these claims carry legal exposure.
+- **Required warnings and age grading.** Warning text, such as choking hazard warnings on toys, comes from an approved source and is never written or paraphrased by the AI.
 - **Brand voice.** The style guide itself, copy for key products and the tone of new categories.
 - **Supplier relationships.** Pushing back on missing or weak substantiation.
 - **Go-live decisions** for a new category or channel.

@@ -72,7 +72,7 @@ The team still makes every credit call. They just stop typing.
 - **Audit trail.** For every line, release, match and draft, log the source document, extracted values, score, rule that fired, model and prompt version, and who approved or changed it.
 - **Failure modes.** Watch for similar part numbers, misread units of measure and new purchase order layouts. When accuracy drops or an input fails, route the whole step to review. The old path stays open during Build, and any step can switch back without a code change.
 - **Write-back limits.** The ERP service account is narrowly scoped. It cannot change credit limits, prices or customer master data.
-- **Data handling and access.** Keep data in accounts you control. Limit review tools to the teams that need them, through single sign-on. Mask bank account numbers. Keep card numbers out of this path; card data carries its own security requirements under PCI DSS. <!-- VERIFY: Confirm PCI DSS scope with your payments and security teams if card data could reach remittance emails or portals. -->
+- **Data handling and access.** Keep data in accounts you control. Limit review tools to the teams that need them, through single sign-on. Mask bank account numbers. Keep card numbers out of this path; card data carries its own security requirements under PCI DSS.
 - **Model and prompt change control.** Version prompts, thresholds and models like code. Test each change against past orders and payments, and record who approved it.
 
 ## How to build it

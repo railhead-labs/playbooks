@@ -65,7 +65,7 @@ On Cloudflare, deploy the custom rule with the Log action first. At the time of 
 - **Untrusted input.** Advisory text is outside content. The AI only drafts, rule expressions are syntax-checked, and the model holds no credential that can change the WAF. See [SO-02](../so-02/) for prompt injection controls.
 - **Data handling and access.** Your exposure list maps what is vulnerable. Keep it behind Cloudflare Access and don't send inventory data to a model provider without an agreement that covers it.
 - **Model and prompt change control.** Prompts, rule templates and routing rules live in version control. Re-run a test set of past advisories before any change ships.
-- **Notification obligations.** If the compromise check finds exploitation, obligations may follow under state breach notification laws, customer contracts, sector regulators or, for public companies, SEC rules on disclosing material cybersecurity incidents. Bring counsel in early. <!-- VERIFY: confirm which breach notification laws, contract terms, sector rules and SEC disclosure requirements apply to the reader's company; no deadlines are stated here on purpose. -->
+- **Notification obligations.** If the compromise check finds exploitation, obligations may follow under state breach notification laws, customer contracts, sector regulators or, for public companies, SEC rules on disclosing material cybersecurity incidents. Bring counsel in early.
 
 *This playbook is general information, not legal or compliance advice. Confirm requirements with your counsel and compliance team.*
 
